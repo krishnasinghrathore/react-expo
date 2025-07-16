@@ -1,13 +1,13 @@
 import React from 'react'
 import { createRoot } from 'react-dom/client'
-import UltimaDashboard from './ultima_dashboard'
+import SimpleDashboard from './simple_dashboard'
 
 // =============================================================================
 // MAIN APP
 // =============================================================================
 
 const App = () => {
-  return <UltimaDashboard />
+  return <SimpleDashboard />
 }
 
 // =============================================================================

@@ -1,10 +1,10 @@
-import { createTamagui, createTokens, createTheme } from 'tamagui'
+import { createTamagui } from 'tamagui'
 
 // =============================================================================
 // ULTIMA THEME TOKENS (Based on PrimeReact Ultima)
 // =============================================================================
 
-const tokens = createTokens({
+const tokens = {
   // Color palette matching Ultima theme
   color: {
     // Primary colors (Blue theme)
@@ -213,13 +213,13 @@ const tokens = createTokens({
     tooltip: 1070,
     max: 2147483647,
   },
-})
+}
 
 // =============================================================================
 // LIGHT THEME
 // =============================================================================
 
-const lightTheme = createTheme({
+const lightTheme = {
   // Background colors
   background: tokens.color.surfaceGround,
   backgroundHover: tokens.color.surfaceHover,
@@ -380,13 +380,13 @@ const lightTheme = createTheme({
   shadowColorHover: tokens.color.surface800,
   shadowColorPress: tokens.color.surface700,
   shadowColorFocus: tokens.color.primary500,
-})
+}
 
 // =============================================================================
 // DARK THEME
 // =============================================================================
 
-const darkTheme = createTheme({
+const darkTheme = {
   // Background colors
   background: tokens.color.surface900,
   backgroundHover: tokens.color.surface800,
@@ -547,7 +547,7 @@ const darkTheme = createTheme({
   shadowColorHover: tokens.color.surface100,
   shadowColorPress: tokens.color.surface200,
   shadowColorFocus: tokens.color.primary500,
-})
+}
 
 // =============================================================================
 // TAMAGUI CONFIGURATION

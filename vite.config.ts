@@ -1,21 +1,9 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
-import { tamaguiPlugin } from '@tamagui/vite-plugin'
 
 export default defineConfig({
   plugins: [
     react(),
-    tamaguiPlugin({
-      config: './ultima_theme.ts',
-      components: ['tamagui'],
-      importsWhitelist: ['constants.js', 'colors.js'],
-      logTimings: true,
-      disableExtraction: process.env.NODE_ENV === 'development',
-      themeBuilder: {
-        input: './ultima_theme.ts',
-        output: './theme-output.ts',
-      },
-    }),
   ],
   define: {
     'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV || 'development'),
@@ -26,7 +14,7 @@ export default defineConfig({
     },
   },
   optimizeDeps: {
-    include: ['react', 'react-dom'],
+    include: ['react', 'react-dom', 'react-native-web'],
   },
   build: {
     rollupOptions: {
@@ -35,6 +23,7 @@ export default defineConfig({
   },
   server: {
     port: 3000,
-    open: true,
+    host: true,
+    open: false,
   },
 })
