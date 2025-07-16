@@ -1,13 +1,13 @@
 import React from 'react'
 import { createRoot } from 'react-dom/client'
-import SimpleDashboard from './simple_dashboard'
+import WebDashboard from './web_dashboard'
 
 // =============================================================================
 // MAIN APP
 // =============================================================================
 
 const App = () => {
-  return <SimpleDashboard />
+  return <WebDashboard />
 }
 
 // =============================================================================

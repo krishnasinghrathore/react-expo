@@ -8,13 +8,8 @@ export default defineConfig({
   define: {
     'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV || 'development'),
   },
-  resolve: {
-    alias: {
-      'react-native': 'react-native-web',
-    },
-  },
   optimizeDeps: {
-    include: ['react', 'react-dom', 'react-native-web'],
+    include: ['react', 'react-dom'],
   },
   build: {
     rollupOptions: {

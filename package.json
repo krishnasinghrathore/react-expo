@@ -1,7 +1,7 @@
 {
-  "name": "ultima-dashboard-tamagui",
+  "name": "ultima-dashboard-web",
   "version": "1.0.0",
-  "description": "A complete PrimeReact Ultima-themed dashboard built with Tamagui",
+  "description": "A complete PrimeReact Ultima-themed dashboard built with React",
   "main": "app_example.tsx",
   "scripts": {
     "dev": "vite",
@@ -12,8 +12,7 @@
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "tamagui": "^1.109.4",
-    "react-native-web": "^0.19.12"
+    "lucide-react": "^0.263.1"
   },
   "devDependencies": {
     "@types/react": "^18.2.43",
@@ -22,17 +21,8 @@
     "typescript": "^5.0.2",
     "vite": "^4.4.5"
   },
-  "overrides": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
-  },
-  "resolutions": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
-  },
   "keywords": [
     "react",
-    "tamagui",
     "dashboard",
     "primereact",
     "ultima",
