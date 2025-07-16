@@ -1,0 +1,36 @@
+{
+  "name": "ultima-dashboard-web",
+  "version": "1.0.0",
+  "description": "A complete PrimeReact Ultima-themed dashboard built with React",
+  "main": "app_example.tsx",
+  "scripts": {
+    "dev": "vite",
+    "dev:wsl": "echo '🚀 Starting for WSL... Access at http://localhost:3000' && vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "lucide-react": "^0.263.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.43",
+    "@types/react-dom": "^18.2.17",
+    "@vitejs/plugin-react": "^4.0.3",
+    "typescript": "^5.0.2",
+    "vite": "^4.4.5"
+  },
+  "keywords": [
+    "react",
+    "dashboard",
+    "primereact",
+    "ultima",
+    "admin",
+    "ui",
+    "components"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
+}
