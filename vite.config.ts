@@ -18,7 +18,7 @@ export default defineConfig({
   },
   server: {
     port: 3000,
-    host: '0.0.0.0', // Allow external connections
+    host: '127.0.0.1', // Bind to 127.0.0.1 for WSL-Windows compatibility
     open: false,
     strictPort: true,
     hmr: {
