@@ -18,7 +18,16 @@ export default defineConfig({
   },
   server: {
     port: 3000,
-    host: true,
+    host: '0.0.0.0', // Allow external connections
     open: false,
+    strictPort: true,
+    hmr: {
+      port: 3001, // Use different port for HMR
+    },
+    // Corporate proxy friendly settings
+    cors: true,
+    proxy: {
+      // Add any API proxy rules here if needed
+    }
   },
 })
